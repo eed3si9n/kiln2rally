@@ -35,14 +35,14 @@ Install
 
 1. Run the follwoing:
 
-    $ sbt assembly
+       $ sbt assembly
     
 2. Grab target/scala_x.x.x/kiln2rally-assembly-x.x.jar and Web.config.
 3. Deploy it to some server.
 4. Here's `start.bat` for Windows:
 
-    cd E:\Kiln2Rally\
-    java -jar E:\Kiln2Rally\kiln2rally-assembly-1.0-SNAPSHOT.jar
+       cd E:\Kiln2Rally\
+       java -jar E:\Kiln2Rally\kiln2rally-assembly-1.0-SNAPSHOT.jar
 
 License
 -------
