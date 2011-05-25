@@ -83,6 +83,10 @@ trait TaskProcessor extends RallyBase {
         ref add Discussion(commit)
         ref update ("Task" ->
             ("State" -> state) ~
+            ("ToDo" -> (state match {
+              case "Completed" => Some(0.0)
+              case _ => None
+            })) ~
             ("Actuals" -> (Option(actuals) map {_ drop 4 dropRight 1})) ~
             ("Owner" -> (Option(owner) flatMap {findUser})))
       }

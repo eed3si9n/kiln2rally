@@ -41,7 +41,7 @@ trait KilnPlanSpec extends HostedSpec {
       "author": "eugene <eugene@example.com>",
       "branch": "default",
       "id": "16265aef917cfe137e250c4f71a4a77ff4ad0974",
-      "message": "DE2319 Fixed in 2011.05.21 for Eugene\nUS1608 In-Progress in 2011.05.20 for Eugene\nTA3775 In-Progress in 3h for Eugene",
+      "message": "DE2319 Fixed in 2011.05.21 for Eugene\nUS1608 In-Progress in 2011.05.20 for Eugene\nTA3775 Completed in 3h for Eugene",
       "revision": 14,
       "timestamp": "3\/23\/2010 3:42:42 PM",
       "url": "http:\/\/kamens.kilnhg.com\/Repo\/Personal\/Playground\/DNForever\/History\/16265aef917cfe137e250c4f71a4a77ff4ad0974",
@@ -78,6 +78,7 @@ object KilnPlanSpecJettyServed extends JettyServedSpec with KilnPlanSpec {
   import unfiltered.request._
   import unfiltered.response._
   import net.lag.configgy.Configgy
+  // Configgy.configure("""F:\temp\kiln2rally\Web.config""")
   Configgy.configure("Web.config")
 
   def setup = {
